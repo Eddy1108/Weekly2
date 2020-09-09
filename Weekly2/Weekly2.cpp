@@ -14,38 +14,26 @@ void task6()
 
     switch (grade) {
     case 'A':
-        std::cout << "\nOutstanding!";
-        break;
     case 'a':
         std::cout << "\nOutstanding!";
         break;
     case 'B':
-        std::cout << "\nVery Good";
-        break;
     case 'b':
         std::cout << "\nVery Good";
         break;
     case 'C':
-        std::cout << "\nGood";
-        break;
     case 'c':
         std::cout << "\nGood";
         break;
     case 'D':
-        std::cout << "\nSome flaws";
-        break;
     case 'd':
         std::cout << "\nSome flaws";
         break;
     case 'E':
-        std::cout << "\nNot very good...";
-        break;
     case 'e':
         std::cout << "\nNot very good...";
         break;
     case 'F':
-        std::cout << "\nFail";
-        break;
     case 'f':
         std::cout << "\nFail";
         break;
