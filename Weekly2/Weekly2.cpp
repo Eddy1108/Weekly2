@@ -7,6 +7,7 @@ int input{0};
 
 void task6() 
 {
+    system("cls");
     char grade = ' ';
     std::cout << "\nWhat grade would you like to have in Programming 1?   -";
     grade = _getch();
@@ -48,6 +49,8 @@ void task6()
 
 void task5() 
 {
+    system("cls");
+
     int i{ 5 };
 
     do
@@ -62,6 +65,8 @@ void task5()
 
 void task4() 
 {
+    system("cls");
+
     for (int i = 5; i < 51; i += 5) 
     {
         std::cout << "i = " << i << std::endl;
@@ -72,6 +77,8 @@ void task4()
 
 void task3() 
 {
+    system("cls");
+
     int i{ 5 };
 
     while (i < 51) 
@@ -85,11 +92,13 @@ void task3()
 
 void task2() 
 {
+    system("cls");
+
     for (int i = 100; i > 0; i--)
     {
-        std::cout << "i = " << i << std::endl;
+        std::cout << i << " ";
     }
-    std::cout << "Printed from 100 to 1 with a FOR loop: \n";
+    std::cout << "\nPrinted from 100 to 1 with a FOR loop: \n";
 
     system("pause");
 }
@@ -97,21 +106,22 @@ void task2()
 void task1()
 {
     int i{ 1 };
+    system("cls");
 
     while (i < 101)
     {
-        std::cout << "i = " << i << std::endl;
+        std::cout << i << "  ";
         i++;
     }
-    std::cout << "Printed from 1 to 100 with a WHILE loop: \n";
+    std::cout << "\nPrinted from 1 to 100 with a WHILE loop: \n";
 
     system("pause");
     
     for (int j = 1; j < 101; j++) 
     {
-        std::cout << "j = " << j << std::endl;
+        std::cout << j << " ";
     }
-    std::cout << "Printed from 1 to 100 with a FOR loop: \n";
+    std::cout << "\nPrinted from 1 to 100 with a FOR loop: \n";
 
     system("pause");
 }
@@ -127,9 +137,10 @@ int getInput()
 int main()
 {
     while (true) {
-        std::cout << "Choose a task between 1 and 6:" << std::endl;
+        std::cout << "* * * * Welcome to Weekly 2 * * * *" << std::endl;
+        std::cout << "Please choose a task from the list:\n" << std::endl;
+        std::cout << "1.Print numbers from 1-100 with a WHILE and FOR loop. \n2.Print numbers from 100-1 with a FOR loop. \n3.Print 5-50 in steps of 5 with a WHILE loop. \n4.Print 5-50 in steps of 5 with a FOR loop. \n5.Print 5-50 in steps of 5 with a DO WHILE loop. \n6.Choose what grade you would like";
         input = getInput();
-        std::cout << "you typed " << input << std::endl;
 
         switch (input) {
         case 1:
